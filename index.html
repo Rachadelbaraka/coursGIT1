@@ -25,5 +25,24 @@
         
         <button type="submit">Envoyer</button>
     </form>
+    <div class="dropdown">
+        <button onclick="toggleMenu()">Menu</button>
+        <div id="dropdown-content" style="display: none;">
+            <a href="#">Option 1</a><br>
+            <a href="#">Option 2</a><br>
+            <a href="#">Option 3</a>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("dropdown-content");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
